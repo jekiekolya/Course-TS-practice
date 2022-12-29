@@ -1,2 +1,2 @@
 # Course-TS-practice
-Created for stadying course by CourseHunter
+Created for studying course by CourseHunter

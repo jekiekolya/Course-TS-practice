@@ -1,0 +1,24 @@
+{
+  "name": "course-ts-practice",
+  "version": "1.0.0",
+  "description": "Created for studying course by CourseHunter",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jekiekolya/Course-TS-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jekiekolya/Course-TS-practice/issues"
+  },
+  "homepage": "https://github.com/jekiekolya/Course-TS-practice#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}

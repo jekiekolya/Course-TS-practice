@@ -40,7 +40,7 @@ type Fish = {
   swim: () => {};
 };
 
-function move(animal: Fish | Bird) {
+export function move(animal: Fish | Bird) {
   // Check type with the help of operator IN
   if ('fly' in animal) {
     return animal.fly();

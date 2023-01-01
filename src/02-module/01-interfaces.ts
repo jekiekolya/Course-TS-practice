@@ -33,7 +33,7 @@ interface Employee extends User, Person {
   contractStart: Date;
 }
 
-interface Developer extends Employee {
+export interface Developer extends Employee {
   skills: string[];
   phone: string; // change field
   level?: 'junior' | 'middle' | 'senior';

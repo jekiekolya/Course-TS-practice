@@ -19,7 +19,7 @@ function createError(): never {
   throw new Error('error');
 }
 
-function average(...array: number[]): number {
+export function average(...array: number[]): number {
   const sum = array.reduce((acc, item) => acc + item, 0);
   return sum / array.length;
 }

@@ -31,4 +31,4 @@ type T2 = someTuple[0]; // T2 = number
 // -----------------------------------------------------------
 const sizes = ['small', 'medium', 'large'] as const; //  readonly ["small", "medium", "large"]
 
-type T3 = typeof sizes[number]; // "small" | "medium" | "large"
+type T3 = typeof sizes[number]; //

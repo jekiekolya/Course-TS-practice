@@ -50,5 +50,3 @@ const averageNew = (...numbers: number[]): number => {
 
   return sum / numbers.length;
 };
-
-let repeat;

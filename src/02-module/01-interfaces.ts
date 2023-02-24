@@ -1,3 +1,20 @@
+// interface User {
+//   readonly email: string;
+//   readonly login: string;
+//   password: string;
+// }
+
+// interface User {
+//   isOnline?: boolean;
+// }
+
+// const user1: User = {
+//   email: 'myEmail',
+//   login: 'myLogin',
+//   password: 'myPassword',
+//   isOnline: false,
+// };
+
 interface User {
   readonly email: string;
   readonly login: string;
@@ -10,9 +27,9 @@ interface User {
 
 const user1: User = {
   email: 'myEmail',
-  login: 'myLogin',
-  password: 'myPassword',
-  isOnline: false,
+  login: 'MyLogin',
+  password: 'MyPassword',
+  isOnline: true,
 };
 
 // ---------------------------Expand WINDOW------------------
@@ -22,6 +39,25 @@ const user1: User = {
 // window.isAuth
 
 // --------------------------Connecting interfaces--------------------
+// interface Person {
+//   readonly firstName: string;
+//   lastName: string;
+//   phone?: string;
+//   yearOfBirth?: number;
+// }
+
+// interface Employee extends User, Person {
+//   contractStart: Date;
+// }
+
+// export interface Developer extends Employee {
+//   skills: string[];
+//   phone: string; // change field
+//   level?: 'junior' | 'middle' | 'senior';
+//   say(): void; // methods
+//   code?: (arg: string) => void; // methods
+// }
+
 interface Person {
   readonly firstName: string;
   lastName: string;
@@ -29,16 +65,16 @@ interface Person {
   yearOfBirth?: number;
 }
 
-interface Employee extends User, Person {
+interface Employee extends Person, User {
   contractStart: Date;
 }
 
 export interface Developer extends Employee {
   skills: string[];
-  phone: string; // change field
+  phone: string;
   level?: 'junior' | 'middle' | 'senior';
-  say(): void; // methods
-  code?: (arg: string) => void; // methods
+  say(): void;
+  code?: (arg: string) => void;
 }
 
 // --------------------Implement interface to class ---------------------

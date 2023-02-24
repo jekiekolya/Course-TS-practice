@@ -1,21 +1,46 @@
+// type Status = 'ok' | 'loading' | 'error';
+
+// const staticX: Status = 'loading';
+
+// // --------------------------------------
+// function printID(id: number | string) {
+//   if (typeof id === 'string') {
+//     console.log(id.toUpperCase());
+//   } else {
+//     console.log(id);
+//   }
+// }
+
+// function welcome(person: [string | string] | string): number | string {
+//   if (Array.isArray(person)) {
+//     console.log('Hello', person.join(' '));
+//     return 1;
+//   }
+//   console.log('Hello', person);
+//   return '123';
+// }
+
+//  --------------------------- New ---------------------------
 type Status = 'ok' | 'loading' | 'error';
 
-const staticX: Status = 'loading';
+const newStatus: Status = 'loading';
 
-// --------------------------------------
-function printID(id: number | string) {
+function printId(id: number | string): void {
   if (typeof id === 'string') {
-    console.log(id.toUpperCase());
+    console.log('id', id.toLocaleUpperCase());
   } else {
-    console.log(id);
+    id.toFixed(2);
   }
 }
 
-function welcome(person: [string | string] | string): number | string {
+function welcome(person: [string, string] | string): number | string {
   if (Array.isArray(person)) {
-    console.log('Hello', person.join(' '));
+    console.log(person.join(' '));
+
     return 1;
   }
-  console.log('Hello', person);
-  return '123';
+
+  console.log(person);
+
+  return '1';
 }

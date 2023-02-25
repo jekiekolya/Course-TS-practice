@@ -5,3 +5,5 @@ function getLength<T extends { length: number }>(arg: T): number {
 getLength('Hello');
 getLength([12334]);
 getLength({ length: 12 });
+// getLength(156);
+// getLength(true);

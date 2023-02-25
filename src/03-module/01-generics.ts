@@ -1,6 +1,9 @@
 type TypeFactory<T> = T;
-type myNumber = TypeFactory<number>; // type myNumber = number
-type myBoolean = TypeFactory<boolean>; // type myBoolean = boolean
+type MyString = TypeFactory<string>; // type MyString = string
+type MyNumber = TypeFactory<number>; // type MyNumber = number
+
+type NewTypeFactory<T, U> = T | U;
+type MrUnion = NewTypeFactory<string, boolean>; // type MrUnion = string | boolean
 
 // ------------------------------------------------------
 function toArray<T>(...arg: T[]): T[] {

@@ -22,6 +22,11 @@ interface DataModel {
 
 type T1 = DataModel['elements']['footer'];
 
+// type T1 = {
+//   description: string;
+//   links: string[];
+// };
+
 // -----------------------------------------------------------
 type someTuple = [number, string, boolean, ...string[]];
 const arr: someTuple = [123, 'asd', true, 'asd', '123'];

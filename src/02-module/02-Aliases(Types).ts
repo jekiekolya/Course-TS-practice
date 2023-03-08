@@ -37,3 +37,17 @@ type Developer = {
   say(): void; // methods
   code?: (arg: string) => void; // methods
 } & Employee; // Extends Types
+
+type User1 = {
+  password: string;
+};
+
+type Person1 = {
+  email: string;
+};
+
+type NEW = User1 | Person1;
+const obj: NEW = {
+  email: 'dsd',
+  password: '123',
+};
